@@ -1,8 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.webdriver import WebDriver
 
-countriesFile = open("./Project #2/countries.txt","r")
-reportFile = open("./Project #2/final_report.csv","w")
+countriesFile = open("./countries.txt","r")
+reportFile = open("./final_report.csv","w")
 reportFile.write("Country,Coronavirus Cases,Deaths,Recovered,Death Percentage\n")
 countries = countriesFile.readlines()[0].split(",")
 print(countries)

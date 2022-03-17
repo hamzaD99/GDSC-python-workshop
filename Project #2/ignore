@@ -1,3 +1,0 @@
-casesLabel = driver.find_element_by_xpath('/html/body/div[3]/div[2]/div[1]/div/div[4]/h1').get_attribute("innerHTML")
-deathsLabel = driver.find_element_by_xpath('/html/body/div[3]/div[2]/div[1]/div/div[5]/h1').get_attribute("innerHTML")
-recoverdLabel = driver.find_element_by_xpath('/html/body/div[3]/div[2]/div[1]/div/div[6]/h1').get_attribute("innerHTML")
