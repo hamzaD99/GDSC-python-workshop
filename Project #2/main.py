@@ -19,8 +19,6 @@ for country in countries:
     deathPer = (int(deaths) / int(cases))*100
     reportFile.write(f"{country.capitalize()},{cases},{deaths},{recoverd},{deathPer}%\n")
 
-
-
 countriesFile.close()
 driver.close()
 reportFile.close()
