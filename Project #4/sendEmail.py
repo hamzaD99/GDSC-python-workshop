@@ -12,7 +12,8 @@ def openConnection(sender_email,password):
 
 def send_email(server,receiver_email,name,sender_email):
     subject = "Your Certificate from GDSC"
-    body = f"Hello {name.lower().capitalize()}!\nPlease find attached your certificate.\nBest regards,\nI'm bot BTW!"
+    bodyName = name.split(" ")[0].lower().capitalize()
+    body = f"Hello {bodyName}!\nPlease find attached your certificate.\nBest regards,\nI'm bot BTW!"
 
     message = MIMEMultipart()
     message["From"] = sender_email
